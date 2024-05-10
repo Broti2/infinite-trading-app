@@ -13,7 +13,7 @@ export default function About() {
         <div className='text-white absolute left-20 top-60'> <h1 className='text-[2.5rem] font-extrabold font-mono'>ABOUT US</h1><p>Home - About Us</p></div>
       </div>
       <div className='h-auto py-20 lg:px-20 bg-[#080C49] bg-opacity-95 md:flex '>
-        <div className='md:w-1/2 m-5 space-y-4  text-gray-300 text-xl text-justify'>
+        <div className='md:w-1/2 m-5 space-y-4  text-gray-300 text-lg md:text-xl text-justify'>
        <p> We are a programming and algorithmic based solution company providing services in specific domains of the Indian Financial Market. Our point is to furnish API based automated software with 100% deployment. Our product has great risk management procedures with trade monitoring.</p>
 
 <p>We are empowering you to utilize a completely robotized exchanging framework connected with your Brokerage accounts through API to accomplish the additional mile for your independence from the rat race.</p>

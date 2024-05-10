@@ -8,7 +8,7 @@ import Link from 'next/link';
 export default function Contacts() {
   return (
     <div className="w-20  bg-transparent fixed bottom-10 -right-4">
-     <Link href={'#'}> <Image className="py-5" width={50} alt="" src={whatapp}></Image></Link>
+     <Link href={'https://wa.me/+917646870428' } target='blank'> <Image className="py-5" width={50} alt="" src={whatapp}></Image></Link>
      <Link href={'#'}> <Image width={50} alt="" src={telegram}></Image></Link>
     </div>
   );

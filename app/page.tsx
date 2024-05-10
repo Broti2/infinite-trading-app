@@ -17,6 +17,7 @@ import marq5 from '../public/assets/zero.png';
 import Marquee from 'react-fast-marquee';
 import whywe from '../public/assets/why-we.jpg';
 import Domain from './components/Domain';
+import { reverse } from 'dns';
 
 export default function Home() {
   const arr = [
@@ -25,7 +26,7 @@ export default function Home() {
     { img: auto, text: 'AUTO BUY SELL' },
     { img: mql, text: 'MQL Devlopments' },
   ];
-  
+
   const fast = [
     'Fast Trading',
     'Buy Sell Confusion',
@@ -209,13 +210,13 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <Domain style='lg:w-[305px]'/>
+        <Domain style="lg:w-[305px]" />
         <div className="bg-[#007aff] bg-opacity-10 pt-10 pb-28 w-full  overflow-x-hidden  h-auto">
           <h1 className="text-white text-4xl font-semibold text-center py-10">
             What Clients are Saying
           </h1>
-          <div className=" ">
-            <Marquee className="h-8 scrollbar-h ">
+          <Marquee speed={100}>
+            <div className=" ">
               <div className="h-4 bg-[#7E66F9] w-[1650px]  relative">
                 <div className="top-[-20px] left-40  absolute ">
                   <div className="bg-white h-5 w-5   ml-3 mt-5"></div>
@@ -268,9 +269,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </Marquee>
-            <div className="flex w-[1650px]">
-              <Marquee>
+
+              <div className="flex w-[1650px]">
                 <div className="text-center mr-5  ml-10 py-5 text-white w-[280px]">
                   <h1 className="text-xl py-3 font-semibold">Rahul Soni</h1>
                   <div>
@@ -306,9 +306,9 @@ export default function Home() {
                     time I subscribed to their services."
                   </div>
                 </div>
-              </Marquee>
+              </div>
             </div>
-          </div>
+          </Marquee>
         </div>
         <div className="bg-[#007aff] bg-opacity-5 h-auto py-20 ">
           <div className="text-center ">
