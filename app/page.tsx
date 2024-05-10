@@ -1,113 +1,360 @@
-import Image from "next/image";
+'use client';
+import React from 'react';
+
+import Banner from './components/Banner';
+import About from './components/About';
+import Image from 'next/image';
+import check from '../public/assets/check-circle-svgrepo-com.svg';
+import api from '../public/assets/api.png';
+import algo from '../public/assets/algorithm.png';
+import auto from '../public/assets/radio-waves.png';
+import mql from '../public/assets/web-dev.png';
+import marq1 from '../public/assets/Image-1.png';
+import marq2 from '../public/assets/Image-2.png';
+import marq3 from '../public/assets/Image-3.png';
+import marq4 from '../public/assets/Image-4.png';
+import marq5 from '../public/assets/zero.png';
+import Marquee from 'react-fast-marquee';
+import whywe from '../public/assets/why-we.jpg';
+import Domain from './components/Domain';
 
 export default function Home() {
+  const arr = [
+    { img: api, text: 'API BRIDGE' },
+    { img: algo, text: 'ALGO TRADING' },
+    { img: auto, text: 'AUTO BUY SELL' },
+    { img: mql, text: 'MQL Devlopments' },
+  ];
+  
+  const fast = [
+    'Fast Trading',
+    'Buy Sell Confusion',
+    'Emotionless Trading',
+    'Emotiones',
+    'Remove Human Error',
+    'Human Error',
+    'Spent only 5 min',
+    'Over Trading',
+    'No Timing Problem',
+    'Timing Problem',
+  ];
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <Banner /> <About />
+      <div className="w-full h-[420px] py-14 bg-[#101E52]">
+        <h1 className="font-extrabold text-white text-center text-4xl py-10">
+          Our Software Compatibility
+        </h1>
+        <div className="md:px-20 py-2 ">
+          <Marquee autoFill speed={100} pauseOnHover>
+            <div className=" h-[200px] ">
+              <div className="bg-[#7E66F9]  h-5 flex space-x-72 px-40 relative">
+                <div className="top-[-20px] absolute">
+                  <div className="bg-white h-5 w-5   ml-3 mt-5"></div>
+                  <div className="h-10 w-10">
+                    <Image
+                      alt="tick"
+                      className="absolute h-full w-full  -top-3 left-1  rounded-full   "
+                      src={check}
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div className=" w-6 h-5 ml-1  rounded-full top-[-3px]"></div>
+                  <Image
+                    className="h-19 w-10  absolute   drop-shadow-xl  rounded-full top-[-10px]"
+                    alt="tick"
+                    src={check}
+                  />
+                </div>
+                <div>
+                  <div className="bg-white w-6 h-5 ml-1  rounded-full top-[-3px]"></div>
+                  <Image
+                    className="h-19 w-10  absolute   drop-shadow-xl  rounded-full top-[-10px]"
+                    alt="tick"
+                    src={check}
+                  />
+                </div>
+                <div>
+                  <div className=" w-6 h-5 ml-1  rounded-full top-[-3px]"></div>
+                  <Image
+                    className="h-19 w-10  absolute   drop-shadow-xl  rounded-full top-[-10px]"
+                    alt="tick"
+                    src={check}
+                  />
+                </div>
+                <div className="">
+                  <div className="bg-white w-6 h-5 ml-1  rounded-full top-[-3px]"></div>
+                  <Image
+                    className="h-19 w-10  absolute   drop-shadow-xl  rounded-full top-[-10px]"
+                    alt="tick"
+                    src={check}
+                  />
+                </div>
+              </div>
+              <div className="space-x-28 h-auto flex  ">
+                <Image
+                  className="pr-10 ml-20 hover:scale-125 transform duration-700 delay-150"
+                  height={120}
+                  width={220}
+                  alt=""
+                  src={marq1}
+                />
+                <Image
+                  className="py-5 hover:scale-125 transform duration-700 delay-150"
+                  height={120}
+                  width={220}
+                  alt=""
+                  src={marq2}
+                />
+                <Image
+                  className="py-10 hover:scale-125 transform duration-700 delay-150"
+                  height={120}
+                  width={220}
+                  alt=""
+                  src={marq3}
+                />
+                <Image
+                  className="py-5 hover:scale-125 transform duration-700 delay-150"
+                  height={90}
+                  width={250}
+                  alt=""
+                  src={marq4}
+                />
+                <Image
+                  className="py-10 hover:scale-125 transform duration-700 delay-150"
+                  height={120}
+                  width={220}
+                  alt=""
+                  src={marq5}
+                />
+              </div>
+            </div>
+          </Marquee>
         </div>
       </div>
+      <div className="bg-[--bg] w-full ">
+        <div className="flex py-28 justify-center">
+          <h1 className="text-4xl font-semibold text-white text-center w-[420px]">
+            This is the way we make it happen.
+          </h1>
+        </div>
+        <div className="w-full   flex flex-wrap px-5 md:px-20 pb-40 ">
+          {arr.map((e, index) => (
+            <div
+              key={index}
+              className=" px-10 md:mx-4 my-4 w-[47%] justify-center flex  bg-[--bg] max-sm:w-full relative hover:z-10 border-blue-800 py-14 transform hover:scale-110 delay-150 duration-700"
+            >
+              <div>
+                <Image
+                  className="mx-auto inset-0"
+                  width={70}
+                  height={70}
+                  alt="api"
+                  src={e.img}
+                />
+                <h1 className="text-3xl font-extrabold font-mono text-white pt-8">
+                  {e.text}
+                </h1>
+              </div>
+              <div
+                style={{
+                  position: 'absolute',
+                  border: '4px solid transparent',
+                  borderImage:
+                    'linear-gradient(to right, var(--lcolor),var(--rcolor)) 1',
+                  borderImageSlice: 1,
+                  zIndex: -1,
+                  borderRadius: '1rem',
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                }}
+              ></div>
+            </div>
+          ))}
+        </div>
+        <div className="bg-[#10144F] md:flex px-5 md:px-20 md:space-x-14 py-28">
+          <div className=" md:w-1/2 hover:scale-110 transform duration-700 delay-150">
+            <Image alt="" src={whywe}></Image>
+          </div>
+          <div className=" md:w-1/2 text-white text-lg text-justify">
+            <h1 className=" text-4xl font-semibold font-mono pb-5">Why We</h1>
+            We aimed to furnish consistent access to market participants with
+            secure and straightforward innovation solutions. We are capable with
+            the trading software and programming of strategies. We execute our
+            work with professional staff Our web- based Infinite Intelligence
+            Algo terminal works with the leading brokers of India who those are
+            providing facilities of API based trading. It is very simple system
+            which gives your relief from watching charts all the time and it
+            saves much time to do other tasks.. Infinite Intelligence Algo is
+            India’s First Auto robot trading terminal which is base_d on a
+            web-browser. It is preloaded with the best Infinite Intelligence
+            Algo Such as Money Machine and Eagle trading system.
+          </div>
+        </div>
+        <div className="bg-[#101E52] text-white md:px-20">
+          <h1 className=" text-4xl text-center  py-20 font-extrabold   ">
+            Fast Trading
+          </h1>
+          <div className="pb-20 md:flex flex-wrap">
+            {fast.map((e, index) => (
+              <div
+                key={index}
+                className="m-2 bg-[#007aff] bg-opacity-10 text-center text-xl font-semibold py-5 rounded-lg md:w-[48%] transform hover:scale-[.80] duration-1000 delay-150"
+              >
+                {e}
+              </div>
+            ))}
+          </div>
+        </div>
+        <Domain style='lg:w-[305px]'/>
+        <div className="bg-[#007aff] bg-opacity-10 pt-10 pb-28 w-full  overflow-x-hidden  h-auto">
+          <h1 className="text-white text-4xl font-semibold text-center py-10">
+            What Clients are Saying
+          </h1>
+          <div className=" ">
+            <Marquee className="h-8 scrollbar-h ">
+              <div className="h-4 bg-[#7E66F9] w-[1650px]  relative">
+                <div className="top-[-20px] left-40  absolute ">
+                  <div className="bg-white h-5 w-5   ml-3 mt-5"></div>
+                  <div className="h-10 w-10">
+                    <Image
+                      alt="tick"
+                      className="absolute h-full w-full  -top-3 left-1  rounded-full   "
+                      src={check}
+                    />
+                  </div>
+                </div>
+                <div className="top-[-20px] right-40 absolute">
+                  <div className="bg-white h-5 w-5   ml-3 mt-5"></div>
+                  <div className="h-10 w-10">
+                    <Image
+                      alt="tick"
+                      className="absolute h-full w-full  -top-3 left-1  rounded-full   "
+                      src={check}
+                    />
+                  </div>
+                </div>
+                <div className="top-[-20px] right-[500px] absolute">
+                  <div className="bg-white h-5 w-5   ml-3 mt-5"></div>
+                  <div className="h-10 w-10">
+                    <Image
+                      alt="tick"
+                      className="absolute h-full w-full  -top-3 left-1  rounded-full   "
+                      src={check}
+                    />
+                  </div>
+                </div>
+                <div className="top-[-20px] right-[810px] absolute">
+                  <div className="bg-white h-5 w-5   ml-3 mt-5"></div>
+                  <div className="h-10 w-10">
+                    <Image
+                      alt="tick"
+                      className="absolute h-full w-full  -top-3 left-1  rounded-full   "
+                      src={check}
+                    />
+                  </div>
+                </div>
+                <div className="top-[-20px] left-[470px] absolute">
+                  <div className="bg-white h-5 w-5   ml-3 mt-5"></div>
+                  <div className="h-10 w-10">
+                    <Image
+                      alt="tick"
+                      className="absolute h-full w-full  -top-3 left-1  rounded-full   "
+                      src={check}
+                    />
+                  </div>
+                </div>
+              </div>
+            </Marquee>
+            <div className="flex w-[1650px]">
+              <Marquee>
+                <div className="text-center mr-5  ml-10 py-5 text-white w-[280px]">
+                  <h1 className="text-xl py-3 font-semibold">Rahul Soni</h1>
+                  <div>
+                    "Very well personally give information about share market
+                    and teach you how to get profit"
+                  </div>
+                </div>
+                <div className="text-center mx-5  py-5 text-white w-[280px]">
+                  <h1 className="text-xl py-3 font-semibold">Rahul Dixit</h1>
+                  <div>
+                    "Very well personally give information about share market
+                    and teach you how to get profit"
+                  </div>
+                </div>
+                <div className="text-center mx-5 py-5 text-white w-[280px]">
+                  <h1 className="text-xl py-3 font-semibold">May 2022</h1>
+                  <div>
+                    "While existing solution problem build a secure use product
+                    based integration"
+                  </div>
+                </div>
+                <div className="text-center mx-5  py-5 text-white w-[280px]">
+                  <h1 className="text-xl py-3 font-semibold">Vinay Joshi</h1>
+                  <div>
+                    "Excelent analysis!! Being your client for many years, I
+                    glad to follow your advice"
+                  </div>
+                </div>
+                <div className="text-center mx-5 py-5 text-white w-[280px]">
+                  <h1 className="text-xl py-3 font-semibold">Ankit Kothari</h1>
+                  <div>
+                    "I am getting appreciable response and assistance since the
+                    time I subscribed to their services."
+                  </div>
+                </div>
+              </Marquee>
+            </div>
+          </div>
+        </div>
+        <div className="bg-[#007aff] bg-opacity-5 h-auto py-20 ">
+          <div className="text-center ">
+            <h1 className="text-gray-300 text-lg ">CONTACT US</h1>
+            <h1 className="text-white font-semibold text-4xl pb-10 pt-5">
+              Get in Touch
+            </h1>
+          </div>
+          <form className="md:w-5/6 px-10 mx-auto flex flex-col items-center">
+            <div className="w-full lg:flex">
+              <input
+                className="bg-[#007aff] bg-opacity-15 w-full lg:w-[32.2%] h-14 px-4  my-1 md:mx-1 lg:my-2"
+                type="text"
+                placeholder="Your Name"
+              />
+              <input
+                className="bg-[#007aff] bg-opacity-15 w-full lg:w-[32.2%] h-14 px-4 my-1 md:mx-1 lg:my-2"
+                type="text"
+                placeholder="Your Email"
+              />
+              <input
+                className="bg-[#007aff] bg-opacity-15 w-full lg:w-[32.2%] h-14 px-4  my-1 md:mx-1 lg:my-2"
+                type="text"
+                placeholder="Subject"
+              />
+            </div>
+            <div className="w-full  my-1 lg:px-4 h-44">
+              <textarea
+                className="px-5 py-3 bg-[#007aff] bg-opacity-15 w-full  h-full"
+                name=""
+                placeholder="Your Message"
+                id=""
+              ></textarea>
+            </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+            <button
+              className="flex justify-center hover:py-12 transform duration-300 delay-150 py-10 w-full md:w-[220px] h-[50px]"
+              type="submit"
+            >
+              <div className="py-4 bg-[#7309CA] hover:bg-[#fd7e14]   bg-opacity-100 rounded-md text-white text-lg w-[220px] h-[60px]">
+                Submit Message
+              </div>
+            </button>
+          </form>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   );
 }
