@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 
 import Banner from './components/Banner';
 import About from './components/About';
@@ -17,9 +17,10 @@ import marq5 from '../public/assets/zero.png';
 import Marquee from 'react-fast-marquee';
 import whywe from '../public/assets/why-we.jpg';
 import Domain from './components/Domain';
-import { reverse } from 'dns';
+
 
 export default function Home() {
+  const [loading,setload]=useState('true');
   const arr = [
     { img: api, text: 'API BRIDGE' },
     { img: algo, text: 'ALGO TRADING' },

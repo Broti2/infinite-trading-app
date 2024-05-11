@@ -24,7 +24,7 @@ export default function Banner() {
           onClick={() => {
             isOpen == '' ? setisOpen('hidden') : setisOpen('');
           }}
-          className="  top-[50%] -translate-x-16 z-10   fixed -rotate-90  "
+          className="  top-[50%] -translate-x-[74px] md:-translate-x-16 z-10   fixed -rotate-90  "
         >
           {/* -90 degree button  */}
           <div className="text-white w-[190px] h-[40px] text-lg border-solid border-[3px] border-[#c69c6d] rounded-full   bg-gradient-to-r from-[--lcolor] to-[--rcolor] hover:from-[--rcolor] hover:to-[--lcolor] px-6 py-1">
@@ -33,7 +33,7 @@ export default function Banner() {
         </button>
 
         {/* banner text */}
-        <div className="absolute z-0 top-[350px] max-sm:top-[35%]  left-24 text-white md:w-[600px]">
+        <div className="absolute z-0 top-[350px] max-sm:top-[35%]  left-10 md:left-24 text-white md:w-[600px]">
           <h1 className="font-semibold text-xl py-4">
             100+ strategy development
           </h1>
@@ -64,7 +64,7 @@ export default function Banner() {
         <div
           className={`${isOpen} fixed z-50  w-full h-full  backdrop-blur-lg  top-0`}
         >
-          <div className="h-[570px] w-[420px] bg-white mx-auto my-10">
+          <div className="h-[570px] md:w-[420px] bg-white mx-auto my-10">
             <button
               className="float-right px-5 py-2 bg-gray-300 text-xl "
               onClick={() => {
@@ -73,7 +73,7 @@ export default function Banner() {
             >
               X
             </button>
-            <Payment w="w-full" h="h-[420px]" />
+            <Payment w="w-full" h="md:h-[420px]" />
           </div>
         </div>
       </div>

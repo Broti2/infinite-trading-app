@@ -8,14 +8,14 @@ export default function Header() {
   const [men, setmenu] = useState('hidden');
   return (
     <div className="fixed z-10 top-0 w-full">
-      <header className=" w-full top-0 h-32 bg-[#10144F] text-white max-sm:px-5 md:px-14 lg:px-20 px-9  ">
+      <header className=" w-full top-0 h-32 bg-[#10144F] text-white max-sm:px-3 md:px-14 lg:px-20 px-9  ">
         <div className="justify-between  flex  ">
           <div className="logo py-6 w-[100px] h-[70px]">
             <Link href="/">
               <Image src={logo} alt="logo" />
             </Link>
           </div>
-          <div className=" flex  space-x-8 lg:space-x-12">
+          <div className=" flex  md:space-x-8 lg:space-x-12">
             <ul className="py-14 flex max-md:hidden  space-x-12 text-lg ">
               <li className="menu-item">
                 <Link href="/">Home</Link>
