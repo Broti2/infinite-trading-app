@@ -18,7 +18,6 @@ import Marquee from 'react-fast-marquee';
 import whywe from '../public/assets/why-we.jpg';
 import Domain from './components/Domain';
 
-
 export default function Home() {
   const arr = [
     { img: api, text: 'API BRIDGE' },
@@ -144,7 +143,7 @@ export default function Home() {
           {arr.map((e, index) => (
             <div
               key={index}
-              className=" px-10 md:mx-4 my-4 w-[47%] justify-center flex  bg-[--bg] max-sm:w-full relative hover:z-10 border-blue-800 py-14 transform hover:scale-110 delay-150 duration-700"
+              className=" px-10 md:mx-4 my-4 w-[47%] justify-center flex  bg-[--bg] max-sm:w-full relative  border-blue-800 py-14 transform hover:scale-110 delay-150 duration-700"
             >
               <div>
                 <Image
@@ -274,36 +273,36 @@ export default function Home() {
                 <div className="text-center mr-5  ml-10 py-5 text-white w-[280px]">
                   <h1 className="text-xl py-3 font-semibold">Rahul Soni</h1>
                   <div>
-                    &quot;Very well personally give information about share market
-                    and teach you how to get profit&quot;
+                    &quot;Very well personally give information about share
+                    market and teach you how to get profit&quot;
                   </div>
                 </div>
                 <div className="text-center mx-5  py-5 text-white w-[280px]">
                   <h1 className="text-xl py-3 font-semibold">Rahul Dixit</h1>
                   <div>
-                    &quot;Very well personally give information about share market
-                    and teach you how to get profit&quot;
+                    &quot;Very well personally give information about share
+                    market and teach you how to get profit&quot;
                   </div>
                 </div>
                 <div className="text-center mx-5 py-5 text-white w-[280px]">
                   <h1 className="text-xl py-3 font-semibold">May 2022</h1>
                   <div>
-                  &quot;While existing solution problem build a secure use product
-                    based integration&quot;
+                    &quot;While existing solution problem build a secure use
+                    product based integration&quot;
                   </div>
                 </div>
                 <div className="text-center mx-5  py-5 text-white w-[280px]">
                   <h1 className="text-xl py-3 font-semibold">Vinay Joshi</h1>
                   <div>
-                  &quot;Excelent analysis!! Being your client for many years, I
-                    glad to follow your advice&quot;
+                    &quot;Excelent analysis!! Being your client for many years,
+                    I glad to follow your advice&quot;
                   </div>
                 </div>
                 <div className="text-center mx-5 py-5 text-white w-[280px]">
                   <h1 className="text-xl py-3 font-semibold">Ankit Kothari</h1>
                   <div>
-                  &quot;I am getting appreciable response and assistance since the
-                    time I subscribed to their services.&quot;
+                    &quot;I am getting appreciable response and assistance since
+                    the time I subscribed to their services.&quot;
                   </div>
                 </div>
               </div>
