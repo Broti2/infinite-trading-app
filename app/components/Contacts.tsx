@@ -11,7 +11,7 @@ export default function Contacts() {
         {' '}
         <Image className="py-5" width={50} alt="" src={whatapp} />
       </Link>
-      <Link href={'/'} target='blank'>
+      <Link href={'https://web.telegram.org/a/#5891460787'} target='blank'>
         {' '}
         <Image width={50} alt="" src={telegram} />
       </Link>
