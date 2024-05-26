@@ -74,7 +74,7 @@ export default function Banner() {
             >
               X
             </button>
-            <Payment w="w-full" h="md:h-[420px]" />
+            <Payment w={" w-full "} h={" md:h-[420px] "} />
           </div>
         </div>
       </div>
