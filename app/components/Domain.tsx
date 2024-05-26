@@ -4,7 +4,7 @@ import api from '../../public/assets/api.png';
 import algo from '../../public/assets/algorithm.png';
 import auto from '../../public/assets/radio-waves.png';
 import domain3 from '../../public/assets/03.png';
-export default function Domain({style}) {
+export default function Domain(sty:any) {
     const domain = [
         {
           img: api,
@@ -37,7 +37,7 @@ export default function Domain({style}) {
             {domain.map((e, index) => (
               <div
                 key={index}
-                className={`mx-auto pt-14 pb-28 px-5 max-sm:w-full md:w-[47%] ${style}  justify-items-center gradient-border m-2 hover:scale-110 transition duration-700 delay-150`}
+                className={`mx-auto pt-14 pb-28 px-5 max-sm:w-full md:w-[47%] ${sty}  justify-items-center gradient-border m-2 hover:scale-110 transition duration-700 delay-150`}
               >
                 <Image className="mx-auto " alt="" src={e.img}></Image>
                 <h1 className="py-6 text-2xl font-semibold">{e.head}</h1>

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import fb from '../../public/assets/facebook-svgrepo-com.svg';
 import twitter from '../../public/assets/twitter-color-svgrepo-com.svg';
-import telegram from '../../public/assets/telegram-svgrepo-com.svg';
+import telegram from '../../public/assets/inst.svg';
 export default function Footer() {
   return (
     <div className="md:flex bg-[--bg] md:px-40 py-20 text-white justify-between">
@@ -13,9 +13,9 @@ export default function Footer() {
           <Image alt="" src={logo} />
         </div>
         <div className='flex h-16  w-52 py-3 px-5'>
-          <Link className='mx-3' href={'#'}><Image className='hover:shadow-orange-400 shadow-xl  hover:scale-110' alt='' src={fb}/></Link>
-          <Link className='mx-3' href={'#'}><Image className='hover:shadow-orange-400 shadow-xl hover:scale-110' alt='' src={twitter}/></Link>
-          <Link className='mx-3' href={'#'}><Image className='hover:shadow-orange-400 shadow-xl hover:scale-110' alt='' src={telegram}/></Link>
+          <Link className='mx-3' href={'#'}><Image className='h-fit w-fit hover:shadow-orange-400 shadow-xl  hover:scale-110' alt='' src={fb}/></Link>
+          <Link className='mx-3' href={'#'}><Image className='h-fit w-fit hover:shadow-orange-400 shadow-xl hover:scale-110' alt='' src={twitter}/></Link>
+          <Link className='mx-3' href={'#'}><Image className='h-fit w-fit hover:shadow-orange-400 shadow-xl hover:scale-110' alt='' src={telegram}/></Link>
         </div>
       </div>
       <div className=" text-center">

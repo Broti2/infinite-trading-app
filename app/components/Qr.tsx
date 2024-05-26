@@ -1,7 +1,7 @@
 import React from 'react';
 import pay from '../../public/assets/payment.jpg';
 import Image from 'next/image';
-export default function Qr({ w, h }) {
+export default function Qr( w:any, h:any ) {
   return (
     <div>
       <h1 className="text-2xl font-semibold pt-8 px-8">QR CODE </h1>

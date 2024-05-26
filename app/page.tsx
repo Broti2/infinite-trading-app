@@ -20,7 +20,6 @@ import Domain from './components/Domain';
 
 
 export default function Home() {
-  const [loading,setload]=useState('true');
   const arr = [
     { img: api, text: 'API BRIDGE' },
     { img: algo, text: 'ALGO TRADING' },
@@ -211,7 +210,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <Domain style="lg:w-[305px]" />
+        <Domain sty="lg:w-[305px]" />
         <div className="bg-[#007aff] bg-opacity-10 pt-10 pb-28 w-full  overflow-x-hidden  h-auto">
           <h1 className="text-white text-4xl font-semibold text-center py-10">
             What Clients are Saying
@@ -275,36 +274,36 @@ export default function Home() {
                 <div className="text-center mr-5  ml-10 py-5 text-white w-[280px]">
                   <h1 className="text-xl py-3 font-semibold">Rahul Soni</h1>
                   <div>
-                    "Very well personally give information about share market
-                    and teach you how to get profit"
+                    &quot;Very well personally give information about share market
+                    and teach you how to get profit&rdquo;
                   </div>
                 </div>
                 <div className="text-center mx-5  py-5 text-white w-[280px]">
                   <h1 className="text-xl py-3 font-semibold">Rahul Dixit</h1>
                   <div>
-                    "Very well personally give information about share market
-                    and teach you how to get profit"
+                    &quot;Very well personally give information about share market
+                    and teach you how to get profit&quot;
                   </div>
                 </div>
                 <div className="text-center mx-5 py-5 text-white w-[280px]">
                   <h1 className="text-xl py-3 font-semibold">May 2022</h1>
                   <div>
-                    "While existing solution problem build a secure use product
-                    based integration"
+                  &quot;While existing solution problem build a secure use product
+                    based integration&quot;
                   </div>
                 </div>
                 <div className="text-center mx-5  py-5 text-white w-[280px]">
                   <h1 className="text-xl py-3 font-semibold">Vinay Joshi</h1>
                   <div>
-                    "Excelent analysis!! Being your client for many years, I
-                    glad to follow your advice"
+                  &quot;Excelent analysis!! Being your client for many years, I
+                    glad to follow your advice&quot;
                   </div>
                 </div>
                 <div className="text-center mx-5 py-5 text-white w-[280px]">
                   <h1 className="text-xl py-3 font-semibold">Ankit Kothari</h1>
                   <div>
-                    "I am getting appreciable response and assistance since the
-                    time I subscribed to their services."
+                  &quot;I am getting appreciable response and assistance since the
+                    time I subscribed to their services.&quot;
                   </div>
                 </div>
               </div>

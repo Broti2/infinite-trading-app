@@ -12,7 +12,7 @@ export default function Header() {
         <div className="justify-between  flex  ">
           <div className="logo py-6 w-[100px] h-[70px]">
             <Link href="/">
-              <Image src={logo} alt="logo" />
+              <Image className='w-fit' src={logo} alt="logo" />
             </Link>
           </div>
           <div className=" flex  md:space-x-8 lg:space-x-12">
