@@ -275,7 +275,7 @@ export default function Home() {
                   <h1 className="text-xl py-3 font-semibold">Rahul Soni</h1>
                   <div>
                     &quot;Very well personally give information about share market
-                    and teach you how to get profit&rdquo;
+                    and teach you how to get profit&quot;
                   </div>
                 </div>
                 <div className="text-center mx-5  py-5 text-white w-[280px]">
