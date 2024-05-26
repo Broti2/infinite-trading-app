@@ -13,9 +13,10 @@ export default function Banner() {
         <div className=" h-[850px]  ">
           <div className="w-full">
             <Image
+              loading='lazy'
               className="h-[850px] max-[375px]:w-full absolute z-[-1] top-12 w-full "
               src={banner}
-              alt=""
+              alt="landing page"
             />
           </div>
         </div>
