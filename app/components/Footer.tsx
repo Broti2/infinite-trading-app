@@ -3,7 +3,7 @@ import logo from '../../public/assets/inf.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import fb from '../../public/assets/facebook-svgrepo-com.svg';
-import twitter from '../../public/assets/twitter-color-svgrepo-com.svg';
+import twit from '../../public/assets/twitter-color-svgrepo-com.svg';
 import insta from '../../public/assets/inst.svg';
 export default function Footer() {
   return (
@@ -32,7 +32,7 @@ export default function Footer() {
             <Image
               className="h-fit w-fit hover:shadow-orange-400 shadow-xl hover:scale-110"
               alt=""
-              src={twitter}
+              src={twit}
             />
           </Link>
           <Link
